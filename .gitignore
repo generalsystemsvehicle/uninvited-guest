@@ -1,0 +1,8 @@
+docker-environment/data/
+docker-environment/nginx/ssl/
+docker-environment/init/initdb.sql
+docker-environment/drive/
+docker-environment/record/
+extension/target/
+docker-environment/GUACAMOLE_HOME/extensions
+.DS_Store
