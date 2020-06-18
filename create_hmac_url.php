@@ -20,7 +20,7 @@ $signature = base64_encode(
 
 $urlPrefix = 'https://localhost:8443';
 
-$client = $connection . "\0" . 'c' . "\0" . 'hmac-auth-config';
+$client = $connection . "\0" . 'c' . "\0" . 'hmac';
 
 $url = $urlPrefix . '/#/client/' . base64_encode($client) . '?' .
 	'&timestamp=' . $timestamp .

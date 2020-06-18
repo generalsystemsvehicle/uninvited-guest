@@ -1,4 +1,4 @@
-package com.generalsystemsvehicle.guacamole.auth.hmac;
+package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 import org.slf4j.Logger;

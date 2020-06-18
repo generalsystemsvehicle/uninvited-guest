@@ -1,4 +1,4 @@
-package com.generalsystemsvehicle.guacamole.auth.hmac;
+package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
@@ -202,7 +202,7 @@ public class HmacAuthenticationProvider extends SimpleAuthenticationProvider {
 
     @Override
     public String getIdentifier() {
-        return "hmac-auth-config";
+        return "hmac";
     }
 
     @Override

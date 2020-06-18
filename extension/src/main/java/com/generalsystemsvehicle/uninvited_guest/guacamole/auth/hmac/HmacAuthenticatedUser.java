@@ -1,4 +1,4 @@
-package com.generalsystemsvehicle.guacamole.auth.hmac;
+package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
 import java.util.Map;
 import java.util.UUID;

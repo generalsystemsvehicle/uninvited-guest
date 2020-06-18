@@ -1,4 +1,4 @@
-package com.generalsystemsvehicle.guacamole.auth.hmac;
+package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
 public class DefaultTimeProvider implements TimeProviderInterface {
     public long currentTimeMillis() {

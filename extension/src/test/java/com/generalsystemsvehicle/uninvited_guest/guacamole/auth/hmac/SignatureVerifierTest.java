@@ -1,7 +1,7 @@
-package com.generalsystemsvehicle.guacamole.auth.hmac;
+package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
 import junit.framework.TestCase;
-import com.generalsystemsvehicle.guacamole.auth.hmac.SignatureVerifier;
+import com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac.SignatureVerifier;
 
 public class SignatureVerifierTest extends TestCase {
     private SignatureVerifier verifier;
