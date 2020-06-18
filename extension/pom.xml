@@ -5,11 +5,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.guacamole</groupId>
-    <artifactId>guacamole-auth-hmac</artifactId>
+    <artifactId>uninvited_guest-guacamole-auth-hmac</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.0</version>
-    <name>guacamole-auth-hmac</name>
-    <url>https://github.com/generalsystemsvehicle/guacamole-auth-hmac</url>
+    <version>1.0.0</version>
+    <name>uninvited_guest-guacamole-auth-hmac</name>
+    <url>https://github.com/generalsystemsvehicle/uninvited_guest</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
