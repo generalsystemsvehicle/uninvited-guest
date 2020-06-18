@@ -132,7 +132,3 @@ The `up.sh` script runs the `mvn package` command inside the `extension` folder.
 You will want to modify the `guacamole.properties` and `hmac-config.xml`
 files on the test server to match your necessary configuration. They are
 located at `/etc/guacamole/`.
-
-## License
-
-Apache License 2.0
