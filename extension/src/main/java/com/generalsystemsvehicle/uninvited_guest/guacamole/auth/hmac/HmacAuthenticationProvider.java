@@ -251,6 +251,8 @@ public class HmacAuthenticationProvider extends SimpleAuthenticationProvider {
             configs = parseConfigFile();
         }
 
+        logger.debug("Secret key value: {}", SECRET_KEY);
+
         // If no mapping available, report as such
         if (configs == null) {
             throw new GuacamoleServerException("Configuration could not be read.");
@@ -308,6 +310,8 @@ public class HmacAuthenticationProvider extends SimpleAuthenticationProvider {
             message.append(name);
             message.append(value);
         }
+
+        logger.debug("Message payload: {}", message);
 
         if (!signatureVerifier.verifySignature(signature, message.toString())) {
             logger.debug("Configs are null");
