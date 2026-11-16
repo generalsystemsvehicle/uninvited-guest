@@ -1,6 +1,6 @@
 package com.generalsystemsvehicle.uninvited_guest.guacamole.auth.hmac;
 
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import java.util.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,7 @@ public class SignatureVerifier {
     public boolean verifySignature(String signature, String message) {
         try {
             Mac mac = createMac();
-            String expected = Base64.encode(mac.doFinal(message.getBytes()));
+            String expected = Base64.getEncoder().encodeToString(mac.doFinal(message.getBytes()));
             logger.debug("Expected Signature: {}", expected);
             logger.debug("Actual Signature: {}", signature);
             return signature.equals(expected);
