@@ -1,4 +1,4 @@
-# uninvited_guest-guacamole-auth-hmac
+# uninvited-guest-guacamole-auth-hmac
 
 ## Description
 
@@ -29,13 +29,13 @@ This alteration allows us to specify a `reservation` in the connection
 url, which overrides any passwords set in `hmac-config.xml`. This is an
 optional URL parameter.
 
-[gsv-repo]: https://github.com/generalsystemsvehicle/uninvited_guest/
+[gsv-repo]: https://github.com/generalsystemsvehicle/uninvited-guest/
 
 ## Deployment & Configuration
 
 **Warning:**
 
-This plugin runs on Guacamole 1.1.0, so you must be running
+This plugin runs on Guacamole 1.5.5, so you must be running
 at least that version before using this plugin.
 
 Copy `uninvited_guest-guacamole-auth-hmac-config-<version>.jar` to the location specified by
@@ -43,7 +43,7 @@ Copy `uninvited_guest-guacamole-auth-hmac-config-<version>.jar` to the location 
 longer need to set then `auth-provider` property, as the latest versions
 of guacamole auto load all included authentication provider extensions.
 
-`uninvited_guest-guacamole-auth-hmac-config` adds three new config keys to `guacamole.properties`:
+`uninvited-guest-guacamole-auth-hmac-config` adds three new config keys to `guacamole.properties`:
 
  * `hmac-server-id` - The key that represents the environment or pod
     that this guacamole server connects to. This is simply named `id` in
@@ -60,7 +60,7 @@ from during the authentication process.
 
  We have provided [example hmac-config.xml and guacamole.properties][example-config] in `extension/src/test/resources`.
 
-[example-config]: https://github.com/riverbedlab/uninvited_guest-guacamole-auth-hmac/tree/master/extension/src/test/resources
+[example-config]: https://github.com/generalsystemsvehicle/uninvited-guest/tree/master/extension/src/test/resources
 
 [config-classpath]: http://guac-dev.org/doc/gug/configuring-guacamole.html
 
@@ -125,7 +125,7 @@ We are using a docker environment to handle testing. The simplest way to do a "b
 
 This should launch your into an RDP session hosted on a dockerized Ubuntu desktop instance.
 
-The `up.sh` script runs the `mvn package` command inside the `extension` folder. It then runs the docker-composer to boot the environment. The `create_hmac_url.sh` script generates a signed URL using the rules of both the Guacamole client URL generator.
+The `up.sh` script runs the `mvn package` command inside the `extension` folder. It then runs the docker-compose to boot the environment. The `create_hmac_url.sh` script generates a signed URL using the rules of both the Guacamole client URL generator.
 
 **Please note:**
 
