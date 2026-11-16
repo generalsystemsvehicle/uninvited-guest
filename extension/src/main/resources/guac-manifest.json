@@ -1,5 +1,5 @@
 {
-    "guacamoleVersion" : "1.1.0",
+    "guacamoleVersion" : "1.5.5",
     "name"      : "HMAC Authentication Extension",
     "namespace" : "uninvited_guest-guacamole-auth-hmac",
     "authProviders" : [
